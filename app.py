@@ -6,7 +6,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 # Replace with your actual site URL
-CORS(app, resources={r"/*": {"origins": "https://cerulean-cucurucho-7d3c7a.netlify.app/pages/test.html"}})
+CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5501"}})
 
 
 @app.route('/receive_message', methods=['POST'])
